@@ -1,0 +1,25 @@
+.item-name {
+  text-align: left;
+}
+.item-text {
+  margin: 0 10px;
+}
+
+.edit-label {
+  color:cadetblue;
+  display: block;
+}
+.edit-label:hover {
+  color:darkblue;
+  cursor: pointer;
+}
+tr {
+  border-bottom: 1px solid grey;
+}
+.item-row:hover {
+  background-color: #eef;
+}
+input:focus {
+  background-color: #eef;
+}
+@import 'bootstrap/dist/css/bootstrap.min.css';

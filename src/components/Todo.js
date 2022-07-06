@@ -125,7 +125,9 @@ export default class Todo extends React.Component {
     let pel = event.target.parentElement.parentElement
     let ei = pel.querySelector("td")
     let eit = ei.innerText.toString()
-    ei.innerHTML = `<input type="text" value=${eit.toString()} />`
+    eit = eit.replace(/'/g, `\'`)
+    console.log(eit)
+    ei.innerHTML = `<input type="text" value="${eit}" />`
     let items = this.state.items;
     items[pel.rowIndex-1].isEdit = true;
     console.log(items)
@@ -135,6 +137,7 @@ export default class Todo extends React.Component {
     let pel = event.target.parentElement.parentElement.parentElement
     let ei = pel.querySelector("td")
     let eit = ei.querySelector("input").value.replace(/ /g, "\u00a0")
+    eit = eit.replace(/'/g, "\u0027")
     ei.innerHTML = `${eit}`
     let items = this.state.items;
     items[pel.rowIndex-1].item = eit;

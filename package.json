@@ -14,6 +14,7 @@
     "reactjs-popup": "^2.0.5",
     "web-vitals": "^2.1.4"
   },
+  "homepage": "https://Seiji-I.github.io/Reactjs-Todo/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -42,7 +43,6 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "https://Seiji-I.github.io/Reactjs-Todo/",
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
   "main": "index.js",
   "directories": {
